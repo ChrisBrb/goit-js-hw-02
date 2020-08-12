@@ -1,16 +1,16 @@
-//Напиши фукцнию findLongestWord(string), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
-//const message = 'The quick brown fox jumped over the lazy dog';
-//console.log(message.split(' '));
-const findLongestWord = function (strings) {
-  // твой код
-  let findLongestWord = word[0];
-  for (const word of words) {
-    if (word < longestWords) {
-      longestWords = word;
-    }
+//Поиск самого длинного слово в строке с пробелами
+//Напиши функцию findLongestWord(string = ""), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
+function findLongestWord (string = "") {
+  // Write code under this line
+  const word = string.split(" "); 
+    let longestWord = "";
+    
+  for (let i=0; i < word.length; i += 1) {
+    if (word[i].length > longestWord.length)  {
+        longestWord = word[i];}
   }
-};
-//console.log('findLongestWord', longestWords)
+     return longestWord;
+  }
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
